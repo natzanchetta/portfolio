@@ -1,0 +1,425 @@
+/*CSS Reset / Normalize*/
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    /*Insira a variavel das outras cores inspecionando o modelo do figma*/
+   --cor-de-link: #000;
+   --cor-de-fundo-1: #E5E5E5;
+   --cor-de-fundo-2: #DAD4FA;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo-1) ;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+    margin: 0;
+    padding: 0 0 1rem 1rem;
+}
+
+li {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--cor-de-link);
+}
+
+h3 {
+    font-size: 2rem;
+    color: #464646;
+}
+
+/*Menu / Cabeçalho*/
+.menu {
+    display: flex;
+    background-color: var(--cor-de-fundo-1);
+    padding: 2rem 10.55vw 2rem 10.55vw;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu__initial {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.55vw;
+}
+
+.menu__vetor {
+    width: 1.66vw;
+    aspect-ratio: 1/1;
+}
+
+.menu__title {
+    font-size: 1rem;
+}
+
+.menu__list { 
+    display: flex;
+    flex-direction: row;
+    gap: 2.22vw;
+    padding: 0;
+}
+
+.menu__list__item {
+    font-size: 1rem;
+}
+
+/*Apresentação*/
+.presentation {
+    background-color: var(--cor-de-fundo-1);
+    display: flex;
+    padding: 2rem 10.55vw 2rem 10.55vw;
+}
+
+.title__bio {
+    font-size: 3.25rem;
+    margin-bottom: 2rem;
+    color: #464646;
+}
+
+.title__subsection {
+    font-size: 1.37rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.25;
+}
+
+.title__network {
+    display: flex;
+    gap: 2.22vw;
+    padding-left: 0;
+}
+
+.title__network__item {
+    font-size: 1rem;
+}
+
+.title__profile {
+    width: 25.5vw;
+    height: auto;
+}
+
+/*Sobre mim*/
+.about { 
+    background-color: var(--cor-de-fundo-2);
+    padding: 4rem 10.55vw 4rem 10.55vw;
+}
+
+.about__title {
+    margin-top: 0;
+}
+
+.about__paragraph {
+    font-size: 1rem;
+    line-height: 1.25;
+    padding-bottom: 1rem;
+}
+
+/*Skills*/
+.skills {
+    padding: 2rem 10.55vw 1.5rem 10.55vw;
+}
+
+.skills__title {
+    display: flex;
+    justify-content: center;
+}
+
+.skills__line {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.skills__box {
+    background-color: white;
+    width: 12.2vw;
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.skills__name {
+    font-weight: bold;
+    padding-top: 0.5rem;
+    color: #464646;
+}
+
+/*Hobbies*/
+.hobbies {
+    padding: 2rem 10.55vw 3.5rem 10.55vw;
+}
+
+.hobbies__title {
+    display: flex;
+    justify-content: center;
+}
+
+.hobbies__line {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.hobbies__box {
+    background-color: white;
+    width: 12.2vw;
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.hobbies__name {
+    font-weight: bold;
+    padding-top: 0.5rem;
+    color: #464646;
+}
+
+/*Formação acadêmica*/
+.academic {
+    background-color: var(--cor-de-fundo-2);
+    padding: 5.12rem 10.55vw 5.12rem 10.55vw;
+}
+
+.academic__title {
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.academic__courses_line {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.academic__courses__list {
+    background-color: white;
+    padding: 0;
+    width: 25.5vw;
+    height: 16rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.academic__courses__item__title {
+    margin: 0.5rem 0 0.5rem 0;
+    font-size: 1.37rem;
+    color: #464646;
+}
+
+.academic__courses__item__subtitle {
+    font-size: 1rem;
+    color: #464646;
+}
+
+h4, p {
+    margin: 0;
+}
+
+/*Experiência com tecnologia*/
+.experience {
+    padding: 2rem 10.55vw 2rem 10.55vw;
+}
+
+.experience__section__title {
+    display: flex;
+    justify-content: center;
+}
+
+.experiencie__box {
+    display: flex;
+    gap: 1.1vw;
+    align-items: center;
+}
+
+.experience__img {
+    width: 53.6vw;
+    height: auto;
+}
+
+.experience__title {
+    margin-bottom: 0.5rem;
+    font-size: 1.37rem;
+    color: #464646;
+}
+
+.experience__text {
+    font-size: 1rem;
+    color: #464646;
+    margin-bottom: 0.5rem;
+}
+
+.experience__description {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.experiencia__botao--repo {
+    width: 7vw;
+    height: 2.5rem;
+    background-color: var(--cor-de-fundo-1);
+    border: 1px solid #8068FF;
+    color: #8068FF;
+    cursor: pointer;
+}
+
+.experiencia__botao--demo {
+    width: 6vw;
+    height: 2.5rem;
+    border: 0;
+    background-color: #8068FF;
+    color: white;
+    cursor: pointer;
+}
+
+/*Contato*/
+.formcontato {
+    background-color: var(--cor-de-fundo-2);
+    padding: 4rem 10.55vw 4rem 10.55vw;
+}
+
+.formcontato__contacto {
+    display: flex;
+    gap: 1rem;
+}
+
+.formcontato__image {
+    display: flex;
+}
+
+.formcontato__img {
+    width: 32.2vw;
+    align-self: center;
+}
+
+.formcontato__title {
+    margin: 0 0 0.5rem 0;
+}
+
+.formcontato__subtext {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+.formcontato__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.9rem;
+    padding-top: 2rem;
+    width: 45vw;
+}
+
+.formcontato__input {
+    height: 3rem;
+    border: 0;
+    padding-left: 0.5rem;
+    color: #464646 !important;
+    position: relative;
+    width: 44.2vw;
+    outline: none;
+
+}
+
+.formcontato__input::placeholder {
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+    color: #464646;
+    font-family: 'Raleway', sans-serif;
+}
+
+  .wrapper {
+    position: relative;
+    font-size: 14px;
+  }
+  
+.formcontato__input:focus::placeholder {
+    font-size: 0.75rem;
+    transform: translateY(-100%);
+    color: rgba(47, 130, 194, .6);
+}
+  
+
+.formcontato__input:placeholder-shown + .placeholder__input--nome {
+/* para esconder o placeholder falso quando o verdadeiro estiver aparente*/
+    opacity: 0;
+}
+
+.placeholder__input--nome {
+    position: absolute;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.75rem;
+    pointer-events: none;
+    color: rgba(47, 130, 194, .6);
+    left: 8px;
+    transform: translateY(-375%);
+}
+
+.formcontato__textarea {
+    resize: none;
+    height: 7.2rem;
+    border: 0;
+    padding: 0.75rem 0 0 0.5rem;
+    color: #464646;
+    outline: none;
+    font-family: 'Raleway', sans-serif;
+}
+
+.formcontato__botao {
+    height: 2.5rem;
+    width: 13vw;
+    background-color: #8068FF;
+    border: 0;
+    color: white;
+    cursor: pointer;
+}
+
+.feedback-message {
+    font-weight: bold;
+    font-size: 0.75rem;
+    font-family: 'Raleway', sans-serif;
+    transform: translateY(+50%);
+}
+
+/*Rodapé*/
+.footer__rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;
+    padding: 2rem 0 2rem 0;
+    gap: 0.5rem;
+}
+
+.footer__text {
+    margin: 0;
+}
+
+/*Intermediário*/
+@media (min-width: 1100px) {
+    .academic__courses__list {
+        width: 32vw;
+    }
+}
+
+/*Tablet*/
+@media (min-width: 768px) {
+    
+    }
+    
+/*Mobile*/
+@media (min-width: 425px) {
+    
+    }
