@@ -107,7 +107,7 @@ function displayFeedbackMessage(inputElement, message) {
     inputElement.focus();
 }
 
-// Function to clear feedback messages
+// Função para apagar as mensagens de feedback
 function clearFeedbackMessages() {
     var feedbackMessages = document.querySelectorAll(".feedback-message");
     feedbackMessages.forEach(function (message) {
